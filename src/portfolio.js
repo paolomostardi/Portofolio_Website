@@ -21,10 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Paolo Mostardi",
-  title: "Hi all, I'm Paolo",
-  subTitle: emoji(
-    ""
-  ),
+  title: "Hi, I'm Paolo",
+  subTitle: [emoji("I love full-stack developement and I am passionate about backend and data engineering. ")],
+  
   resumeLink:
     "https://drive.google.com/file/d/1OnZP0Nikw5esfA4pMcqRKG4ucdJ8iH0X/view?usp=sharing/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -45,16 +44,13 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  title: "What do I do",
+  subTitle: "",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Engineer adaptable REST API-based data pipelines utilizing Pandas and Numpy for machine learning projects."),
+    emoji("⚡ Develop and maintained robust, scalable code architecture in diverse projects, ensuring high quality and refactorability. "),
+    emoji("⚡ Built and launch interactive frontends for desktop and mobile applications, delivering seamless user experiences."),
+    emoji("⚡ Integrate third-party services like Google Cloud and MySQL, enhancing functionality and scalability across various projects.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -106,17 +102,68 @@ const educationInfo = {
       duration: "September 2020 - August 2023",
       desc: "Took the following courses: ",
       descBullets: [
-        "Software Quality and Testing: Creation of a full testing plan of leaflet (Unit testing, Code review and more) ",
-        "System Design ",
-        "Software Engineering",
-        "Data and Databases ",
-        "Machine Learning",
-        
+        "Software Quality and Testing: Developed comprehensive testing strategies for Leaflet software.",
+        "Software Engineering: Implemented full-stack web applications using Agile methodologies.",
+        "Data and Databases: Designed and implemented SQL-based relational databases.",
+        "Machine Learning: Achieved over 85% disease detection accuracy using Random Forest and Multi-layer Perceptron on Heart Disease Dataset.",
+        "Deep Learning: Deployed a custom CNN architecture with TensorFlow achieving over 75% accuracy on Cifar-10 dataset.",
       ]
-    }
-  ]
+    }],
+  experience: [
+      {
+        Stack: "Software Engineering", //Insert stack or technology you have experience in
+        progressPercentage: "80%" //Insert relative proficiency in percentage
+      },
+      {
+        Stack: "Backend",
+        progressPercentage: "60%"
+      },
+      {
+        Stack: "FrontEnd aa",
+        progressPercentage: "60%"
+      },
+      {
+        Stack: "FrontEnd Developement",
+        progressPercentage: "60%"
+      }
+    ]
+  
 };
 
+
+const ConwaysInfo = {
+  display: true, // Set false to hide this section, defaults to true
+  schools: [
+    {
+      schoolName: "Bournemouth University",
+      logo: require("./assets/images/BournemouthLogo.png"),
+      subHeader: "Bachelors of science in Software Engineering",
+      duration: "September 2020 - August 2023",
+      desc: "Took the following courses: ",
+      descBullets: [
+        "Software Quality and Testing: Developed comprehensive testing strategies for Leaflet software."
+      ]
+    }],
+  experience: [
+      {
+        Stack: "Software Engineering", //Insert stack or technology you have experience in
+        progressPercentage: "80%" //Insert relative proficiency in percentage
+      },
+      {
+        Stack: "Backend",
+        progressPercentage: "60%"
+      },
+      {
+        Stack: "FrontEnd aa",
+        progressPercentage: "60%"
+      },
+      {
+        Stack: "Backend",
+        progressPercentage: "60%"
+      }
+    ]
+  
+};
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
@@ -128,10 +175,14 @@ const techStack = {
     },
     {
       Stack: "Backend",
-      progressPercentage: "60%"
+      progressPercentage: "50%"
     },
     {
-      Stack: "FrontEnd Developement",
+      Stack: "Data engineering ",
+      progressPercentage: "70%"
+    },
+    {
+      Stack: "FrontEnd implementation",
       progressPercentage: "60%"
     }
   ],
@@ -331,9 +382,10 @@ const podcastSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "ciao",
   number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  email_address: "s@gmail.com",
+  display: true
 };
 
 // Twitter Section
@@ -361,6 +413,7 @@ export {
   talkSection,
   podcastSection,
   contactInfo,
+  ConwaysInfo,
   twitterDetails,
   isHireable
 };

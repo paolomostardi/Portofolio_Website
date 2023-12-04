@@ -21,6 +21,8 @@ import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
 
+import Conways from "./conways/Conways"
+
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
   const [isDark, setIsDark] = useLocalStorage("isDark", darkPref.matches);
@@ -54,17 +56,16 @@ const Main = () => {
             <Greeting />
             <Skills />
             <StackProgress />
-            <Education />
-            <Projects />
+            <Education/>
             <WorkExperience />
+            <Conways/>
+            <Projects />
             <StartupProject />
             <Achievement />
             <Blogs />
             <Talks />
             <Twitter />
             <Podcast />
-            <Profile />
-            <Footer />
             <ScrollToTopButton />
           </>
         )}

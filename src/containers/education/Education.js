@@ -4,6 +4,8 @@ import EducationCard from "../../components/educationCard/EducationCard";
 import {educationInfo} from "../../portfolio";
 
 export default function Education() {
+  console.log('hello22')
+
   if (educationInfo.display) {
     return (
       <div className="education-section" id="education">
